@@ -1,0 +1,21 @@
+.socials__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 155px;
+}
+
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}

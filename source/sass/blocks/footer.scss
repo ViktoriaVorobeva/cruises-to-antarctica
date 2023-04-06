@@ -1,0 +1,23 @@
+.footer {
+  background-color: $color-tangaroa;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  display: block;
+  margin-right: 40px;
+}
+
+.footer__nav {
+  margin-right: 323px;
+
+  @include vp-1279 {
+    margin-right: 87px;
+  }
+}
