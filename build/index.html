@@ -16,51 +16,72 @@
 </head>
 
 <body>
+  <!-- <div style="
+  position: absolute;
+  width: 320px;
+  height: 7369px;
+  margin: 0 auto;
+  background-image: url('img/phone.jpg');
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: invert(1);
+  pointer-events: none;
+"></div> -->
   <div class="wrapper">
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a class="header__logo" href="#">
-            <img src="img/svg/logo.svg" width="70" height="38" alt="логотип Круизов">
+          <a class="header__logo logo" href="#">
+            <svg class="logo__icon" width="70" height="38" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+            <span class="visually-hidden">логотип Круизов</span>
           </a>
-          <ul class="header__navigation navigation">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">
-                Преимущества
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">
-                Направления
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">
-                Ближайшие круизы
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">
-                Контакты
-              </a>
-            </li>
-          </ul>
+          <nav class="header__navigation header__navigation--closed header__navigation--nojs">
+            <button class="header__navigation-toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="header__navigation-list navigation">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Преимущества
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Направления
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Ближайшие круизы
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main>
       <section class="main-screen">
         <div class="container">
-          <h1 class="main-screen__title">Круизы в&nbsp;Антарктику</h1>
-          <p class="main-screen__text">Волшебный мир айсбергов и&nbsp;пингвинов</p>
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
       </section>
       <section class="travel">
         <div class="container">
           <div class="travel__box">
             <div class="travel__wrapper">
-              <h2 class="travel__title">Путешествие на&nbsp;край Земли</h2>
-              <p class="travel__description">Это волшебное путешествие поможет вам познакомиться поближе
+              <h2>Путешествие на&nbsp;край Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе
                 с&nbsp;удивительным
                 миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть:
                 ледяные
@@ -81,29 +102,32 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__box">
-          <a class="footer__logo" href="#">
-            <img src="img/svg/logo.svg" width="70" height="38" alt="логотип Круизов">
+          <a class="footer__logo logo" href="#">
+            <svg class="logo__icon" width="70" height="38" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+            <span class="visually-hidden">логотип Круизов</span>
           </a>
           <section class="footer__nav">
             <h2 class="visually-hidden">Навигация подвала</h2>
             <ul class="footer__navigation navigation">
               <li class="navigation__item">
-                <a class="navigation__link" href="#">
+                <a class="navigation__link navigation__link--footer" href="#">
                   Преимущества
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#">
+                <a class="navigation__link navigation__link--footer" href="#">
                   Направления
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#">
+                <a class="navigation__link navigation__link--footer" href="#">
                   Ближайшие круизы
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#">
+                <a class="navigation__link navigation__link--footer" href="#">
                   Контакты
                 </a>
               </li>
