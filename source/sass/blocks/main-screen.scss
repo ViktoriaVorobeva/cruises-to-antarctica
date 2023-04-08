@@ -2,6 +2,14 @@
   padding-bottom: 280px;
 
   @include vp-767 {
+    padding-bottom: 210px;
+  }
+
+  @include vp-545 {
+    padding-bottom: 190px;
+  }
+
+  @include vp-453 {
     padding-bottom: 144px;
   }
 
@@ -71,5 +79,6 @@
 
   @include vp-767 {
     font-size: 16px;
+    width: 63vw;
   }
 }
