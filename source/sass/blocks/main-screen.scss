@@ -46,7 +46,7 @@
   font-size: 54px;
   line-height: 66px;
   color: $color-alice-blue;
-  text-shadow: 0px 4px 4px $color-black-shadow;
+  text-shadow: 0 4px 4px $color-black-shadow;
   margin-bottom: 13px;
 
   @include vp-1023 {
@@ -68,7 +68,7 @@
   color: $color-alice-blue;
   font-size: 20px;
   line-height: 24px;
-  text-shadow: 0px 4px 4px $color-black-shadow;
+  text-shadow: 0 4px 4px $color-black-shadow;
 
   @include vp-1023 {
     padding-left: 0;

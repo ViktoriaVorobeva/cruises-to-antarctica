@@ -47,7 +47,7 @@
       content: "";
       width: 42px;
       height: 22px;
-      background-image: url('../img/svg/logo-phone.svg');
+      background-image: url("../img/svg/logo-phone.svg");
       background-repeat: no-repeat;
       top: 20px;
       right: 228px;
@@ -57,11 +57,11 @@
 }
 
 .header__navigation--closed .header__navigation-toggle {
-  background-image: url('../img/svg/menu.svg');
+  background-image: url("../img/svg/menu.svg");
 }
 
 .header__navigation--opened .header__navigation-toggle {
-  background-image: url('../img/svg/icon-close.svg');
+  background-image: url("../img/svg/icon-close.svg");
 }
 
 @include vp-767 {

@@ -1,0 +1,238 @@
+.product h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-alice-blue;
+}
+
+.product__list {
+  display: none;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+
+  @include vp-767 {
+    margin-bottom: 24px;
+  }
+}
+
+.product__group {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include vp-767 {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.product__list dt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-alice-blue;
+  margin-bottom: 2px;
+}
+
+.product__list dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-alice-blue;
+}
+
+.product__link {
+  display: none;
+  vertical-align: bottom;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  background-color: $color-alice-blue;
+  padding: 10px 47px;
+  width: 100%;
+  text-align: center;
+
+
+  @include vp-1279 {
+    padding: 10px 15px;
+  }
+
+  @include vp-1023 {
+    padding: 10px 60px;
+  }
+
+  @include vp-767 {
+    padding: 10px 50px;
+  }
+}
+
+.product {
+  padding: 27px 26px 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 386px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+
+  @include vp-1023 {
+    padding: 27px 35px 29px;
+  }
+
+  @include vp-767 {
+    padding: 27px 25px 17px;
+  }
+
+  &--astoria {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/product-1@1x.webp") 1x, url("../img/catalog/product-1@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: image-set(url("../img/catalog/product-1-tablet@1x.webp") 1x, url("../img/catalog/product-1-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/catalog/product-1-phone@1x.webp") 1x, url("../img/catalog/product-1-phone@2x.webp") 2x);
+    }
+  }
+
+  &--alain {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/product-2@1x.webp") 1x, url("../img/catalog/product-2@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: image-set(url("../img/catalog/product-2-tablet@1x.webp") 1x, url("../img/catalog/product-2-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/catalog/product-2-phone@1x.webp") 1x, url("../img/catalog/product-2-phone@2x.webp") 2x);
+    }
+  }
+
+  &--athlantis {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/product-3@1x.webp") 1x, url("../img/catalog/product-3@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: image-set(url("../img/catalog/product-3-tablet@1x.webp") 1x, url("../img/catalog/product-3-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/catalog/product-3-phone@1x.webp") 1x, url("../img/catalog/product-3-phone@2x.webp") 2x);
+    }
+  }
+
+  &--odissei {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/product-4@1x.webp") 1x, url("../img/catalog/product-4@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: image-set(url("../img/catalog/product-4-tablet@1x.webp") 1x, url("../img/catalog/product-4-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/catalog/product-4-phone@1x.webp") 1x, url("../img/catalog/product-4-phone@2x.webp") 2x);
+    }
+  }
+
+  &--olympia {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/product-5@1x.webp") 1x, url("../img/catalog/product-5@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: image-set(url("../img/catalog/product-5-tablet@1x.webp") 1x, url("../img/catalog/product-5-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/catalog/product-5-phone@1x.webp") 1x, url("../img/catalog/product-5-phone@2x.webp") 2x);
+    }
+  }
+
+  &--avrora {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/product-6@1x.webp") 1x, url("../img/catalog/product-6@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: image-set(url("../img/catalog/product-6-tablet@1x.webp") 1x, url("../img/catalog/product-6-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/catalog/product-6-phone@1x.webp") 1x, url("../img/catalog/product-6-phone@2x.webp") 2x);
+    }
+  }
+
+  &--leonor {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/product-7@1x.webp") 1x, url("../img/catalog/product-7@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: image-set(url("../img/catalog/product-7-tablet@1x.webp") 1x, url("../img/catalog/product-7-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/catalog/product-7-phone@1x.webp") 1x, url("../img/catalog/product-7-phone@2x.webp") 2x);
+    }
+  }
+
+  &--minion {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/product-8@1x.webp") 1x, url("../img/catalog/product-8@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: image-set(url("../img/catalog/product-8-tablet@1x.webp") 1x, url("../img/catalog/product-8-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/catalog/product-8-phone@1x.webp") 1x, url("../img/catalog/product-8-phone@2x.webp") 2x);
+    }
+  }
+
+  @include hover-focus {
+    justify-content: flex-start;
+    background-color: $color-tangaroa;
+    background-image: none;
+
+    h3 {
+      margin-bottom: 15px;
+    }
+
+    .product__list {
+      display: block;
+    }
+
+    .product__link {
+      display: block;
+    }
+  }
+
+  &:hover {
+    justify-content: flex-start;
+    background-color: $color-tangaroa;
+    background-image: none;
+
+    h3 {
+      margin-bottom: 15px;
+    }
+
+    .product__list {
+      display: block;
+    }
+
+    .product__link {
+      display: block;
+    }
+  }
+}
