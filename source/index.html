@@ -18,10 +18,10 @@
 <body>
   <!-- <div style="
   position: absolute;
-  width: 320px;
+  width: 1366px;
   height: 7369px;
   margin: 0 auto;
-  background-image: url('img/phone.jpg');
+  background-image: url('img/desktop.jpg');
   background-repeat: no-repeat;
   opacity: 0.5;
   left: 50%;
@@ -302,6 +302,47 @@
               <a class="product__link" href="#">Забронировать</a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="booking">
+        <div class="container">
+          <div class="booking__box">
+            <div class="booking__wrapper">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <div class="booking__form-container form" data-form-validate data-callback="base">
+              <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+              <form method="post" action="https://echo.htmlacademy.ru">
+                <div class="form__field" data-validate-type="text" data-required data-message-base="Введите имя">
+                  <label>
+                    <input name="name" id="name" type="text" placeholder="Имя" autocomplete="off">
+                  </label>
+                </div>
+                <div class="form__field" data-validate-type="phone" data-on-input-validate
+                data-required data-message-base="Введите номер телефона">
+                  <label>
+                    <input name="phone" id="phone" type="tel" placeholder="Телефон" autocomplete="off">
+                  </label>
+                </div>
+                <div class="form__field" data-validate-type="email" data-on-input-validate
+                data-required data-message-base="Введите email">
+                  <label>
+                    <input name="email" id="email" type="email" placeholder="Email" autocomplete="off">
+                  </label>
+                </div>
+                <div class="form__field form__field--checkbox" data-validate-type="checkbox" data-required
+                data-message-base="Обязательный пункт">
+                  <label>
+                    <input name="agreement" id="agreement" type="checkbox" value="agreement" checked>
+                    <span class="form__field-mark" tabindex="0"></span>
+                    <span class="form__field-text">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                  </label>
+                </div>
+                <button type="submit">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

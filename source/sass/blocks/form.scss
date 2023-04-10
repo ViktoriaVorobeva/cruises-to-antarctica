@@ -1,0 +1,168 @@
+.form {
+  background-color: $color-tangaroa;
+  padding: 42px 50px 50px 50px;
+  max-width: 403px;
+
+  @include vp-767 {
+    padding: 33px 28px 41px;
+    max-width: 100%;
+  }
+}
+
+.form h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 27px;
+  color: $color-alice-blue;
+
+  @include vp-767 {
+    line-height: 140%;
+    text-align: center;
+  }
+}
+
+.form__field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 21px;
+
+  &--checkbox {
+    margin-bottom: 33px;
+
+    @include vp-767 {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+.form__field input {
+  width: 100%;
+  height: 43px;
+  font-family: $ff-placeholder;
+  background-color: $color-alice-blue;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-tangaroa;
+  padding: 11px 16px;
+
+  &::placeholder {
+    color: $color-tangaroa-light;
+  }
+
+  @include hover {
+    background-color: $color-qartz;
+  }
+
+  @include focus {
+    border-color: $color-tangaroa-light;
+  }
+}
+
+.form__field--checkbox input {
+  display: none;
+}
+
+.form__field-mark {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background-color: $color-alice-blue;
+
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+    left: 2px;
+  }
+}
+
+.form__field--checkbox input:checked+.form__field-mark::after {
+  position: absolute;
+  background-image: url("../img/svg/check.svg");
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 3px;
+  width: 11px;
+  height: 8px;
+  content: "";
+
+  @include vp-767 {
+    top: 6px;
+    left: 5px;
+  }
+}
+
+.form__field-text {
+  display: block;
+  font-size: 10px;
+  line-height: 130%;
+  color: $color-alice-blue;
+  padding-left: 23px;
+  cursor: pointer;
+
+  @include vp-767 {
+    line-height: 120%;
+    padding-left: 30px;
+    max-width: 58vw;
+  }
+}
+
+.form__field--checkbox input:hover + .form__field-mark {
+   background-color: $color-qartz;
+}
+
+.form__field--checkbox input:hover + .form__field-mark::after {
+  opacity: 0.7;
+}
+
+.form__field--checkbox input:hover ~ .form__field-text {
+  color: $color-qartz;
+}
+
+.form__field--checkbox input:active + .form__field-mark {
+  background-color: $color-tangaroa;
+}
+
+.form__field--checkbox input:active + .form__field-mark::after {
+  opacity: 0.5;
+}
+
+.form__field--checkbox input:active ~ .form__field-text {
+  color: $color-default-white;
+}
+
+.form button {
+  padding: 12px 89px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  background-color: $color-alice-blue;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+
+  @include vp-767 {
+    padding: 10px 54px 11px;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+}
+
+.input-message {
+  position: absolute;
+  color: $color-alice-blue;
+  font-size: 10px;
+  bottom: -22px;
+  left: 0;
+}
