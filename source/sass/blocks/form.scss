@@ -79,7 +79,7 @@
   }
 }
 
-.form__field--checkbox input:checked+.form__field-mark::after {
+.form__field--checkbox input:checked + .form__field-mark::after {
   position: absolute;
   background-image: url("../img/svg/check.svg");
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@
 }
 
 .form__field--checkbox input:hover + .form__field-mark {
-   background-color: $color-qartz;
+  background-color: $color-qartz;
 }
 
 .form__field--checkbox input:hover + .form__field-mark::after {

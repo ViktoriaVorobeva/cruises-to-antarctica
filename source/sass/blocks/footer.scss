@@ -1,11 +1,15 @@
 .footer {
   background-color: $color-tangaroa;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 43px;
 
-  @include vp-767 {
+  @include vp-1023 {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 30px;
   }
 }
 
@@ -30,12 +34,12 @@
 
   @include vp-767 {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
   }
 }
 
 .footer__nav {
-  margin-right: 323px;
+  margin-right: 336px;
 
   @include vp-1279 {
     margin-right: 87px;
@@ -47,7 +51,7 @@
 
   @include vp-767 {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -60,5 +64,13 @@
 
   @include vp-767 {
     max-width: 100%;
+  }
+}
+
+.footer__navigation-item {
+  @include vp-767 {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
   }
 }
