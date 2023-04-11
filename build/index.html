@@ -16,37 +16,23 @@
 </head>
 
 <body>
-  <!-- <div style="
-  position: absolute;
-  width: 320px;
-  height: 7369px;
-  margin: 0 auto;
-  background-image: url('img/phone.jpg');
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  left: 50%;
-  transform: translateX(-50%);
-  filter: invert(1);
-  pointer-events: none;
-  z-index: 10;
-"></div> -->
   <div class="wrapper">
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo logo" href="#">
-            <svg class="logo__icon" width="70" height="38" aria-hidden="true" focusable="false">
+            <svg class="logo__icon logo__icon--phone" width="70" height="38" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#logo"></use>
             </svg>
             <span class="visually-hidden">логотип Круизов</span>
           </a>
-          <nav class="header__navigation header__navigation--closed header__navigation--nojs">
-            <button class="header__navigation-toggle" type="button">
+          <nav class="header__navigation header__navigation--nojs">
+            <button class="header__navigation-toggle" type="button" data-open-modal="feedback">
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="header__navigation-list navigation">
               <li class="navigation__item">
-                <a class="navigation__link" href="#">
+                <a class="navigation__link" href="#advantages">
                   Преимущества
                 </a>
               </li>
@@ -56,12 +42,12 @@
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#">
+                <a class="navigation__link" href="#catalog">
                   Ближайшие круизы
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#">
+                <a class="navigation__link" href="#contacts">
                   Контакты
                 </a>
               </li>
@@ -97,7 +83,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="container">
           <h2>Преимущества</h2>
           <ul class="advantages__list">
@@ -119,7 +105,7 @@
           </ul>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="container">
           <h2>Ближайшие круизы</h2>
           <ul class="catalog__list">
@@ -343,7 +329,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__box">
             <h2 class="visually-hidden">Контакты</h2>
@@ -395,7 +381,7 @@
             <h2 class="visually-hidden">Навигация подвала</h2>
             <ul class="footer__navigation navigation">
               <li class="navigation__item footer__navigation-item">
-                <a class="navigation__link navigation__link--footer" href="#">
+                <a class="navigation__link navigation__link--footer" href="#advantages">
                   Преимущества
                 </a>
               </li>
@@ -405,12 +391,12 @@
                 </a>
               </li>
               <li class="navigation__item footer__navigation-item">
-                <a class="navigation__link navigation__link--footer" href="#">
+                <a class="navigation__link navigation__link--footer" href="#catalog">
                   Ближайшие круизы
                 </a>
               </li>
               <li class="navigation__item footer__navigation-item">
-                <a class="navigation__link navigation__link--footer" href="#">
+                <a class="navigation__link navigation__link--footer" href="#contacts">
                   Контакты
                 </a>
               </li>
@@ -455,12 +441,33 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="15" height="15">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <ul class="navigation navigation--modal">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#advantages">
+              Преимущества
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              Направления
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#catalog">
+              Ближайшие круизы
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#contacts">
+              Контакты
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

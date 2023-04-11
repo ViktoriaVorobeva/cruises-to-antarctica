@@ -9,12 +9,7 @@
 .product__list {
   display: none;
   margin: 0;
-  margin-bottom: 26px;
   padding: 0;
-
-  @include vp-767 {
-    margin-bottom: 24px;
-  }
 }
 
 .product__group {
@@ -55,6 +50,7 @@
   padding: 10px 47px;
   width: 100%;
   text-align: center;
+  margin-top: auto;
 
 
   @include vp-1279 {

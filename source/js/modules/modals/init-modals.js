@@ -1,7 +1,8 @@
 import {Modals} from './modals';
 
 let modals;
-
+const headerLogo = document.querySelector('.logo__icon--phone');
+const headerButton = document.querySelector('.header__navigation-toggle');
 // Здесь реализован пример открытия модалки через колбэк закрытия
 // const openModalInCloseCallback = (name, context = this) => {
 //   context._enableScrolling = false;
@@ -17,12 +18,21 @@ const settings = {
   'default': {
     preventDefault: true,
     stopPlay: true,
-    lockFocus: true,
+    lockFocus: false,
     startFocus: true,
-    focusBack: true,
+    focusBack: false,
     eventTimeout: 400,
-    openCallback: false,
-    closeCallback: false,
+    openCallback: () => {
+      if (headerLogo) {
+        headerLogo.classList.add('visually-hidden');
+      }
+    },
+    closeCallback: () => {
+      if (headerLogo) {
+        headerLogo.classList.remove('visually-hidden');
+      }
+      headerButton.blur();
+    },
   },
 };
 

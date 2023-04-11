@@ -1,12 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {getScroll} from './modules/scroll';
 
 // ---------------------------------
 
 const navHeader = document.querySelector('.header__navigation');
-const navToggle = document.querySelector('.header__navigation-toggle');
-const headerLogo = document.querySelector('.header__logo');
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -17,19 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-  navHeader.classList.remove('header__navigation--nojs');
-
-  navToggle.addEventListener('click', function () {
-    if (navHeader.classList.contains('header__navigation--closed')) {
-      navHeader.classList.remove('header__navigation--closed');
-      navHeader.classList.add('header__navigation--opened');
-      headerLogo.classList.add('visually-hidden');
-    } else {
-      navHeader.classList.add('header__navigation--closed');
-      navHeader.classList.remove('header__navigation--opened');
-      headerLogo.classList.remove('visually-hidden');
-    }
-  });
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
@@ -38,6 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    if (navHeader) {
+      navHeader.classList.remove('header__navigation--nojs');
+    }
+    getScroll();
   });
 });
 
