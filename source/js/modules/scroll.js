@@ -1,6 +1,4 @@
-import {modals} from './modals/init-modals';
-
-const TIME_OUT = 200;
+import {modals, TIME_OUT} from './modals/init-modals';
 
 const navElements = document.querySelectorAll('.navigation__link');
 

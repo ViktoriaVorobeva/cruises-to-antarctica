@@ -1,5 +1,7 @@
 import {Modals} from './modals';
 
+const TIME_OUT = 200;
+
 let modals;
 const headerLogo = document.querySelector('.logo__icon--phone');
 const headerButton = document.querySelector('.header__navigation-toggle');
@@ -21,7 +23,7 @@ const settings = {
     lockFocus: false,
     startFocus: true,
     focusBack: false,
-    eventTimeout: 200,
+    eventTimeout: TIME_OUT,
     openCallback: () => {
       if (headerLogo) {
         headerLogo.classList.add('visually-hidden');
@@ -48,4 +50,4 @@ const initModals = () => {
   window.modals = modals;
 };
 
-export {modals, initModals};
+export {modals, initModals, TIME_OUT};
