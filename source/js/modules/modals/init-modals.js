@@ -21,7 +21,7 @@ const settings = {
     lockFocus: false,
     startFocus: true,
     focusBack: false,
-    eventTimeout: 400,
+    eventTimeout: 200,
     openCallback: () => {
       if (headerLogo) {
         headerLogo.classList.add('visually-hidden');
