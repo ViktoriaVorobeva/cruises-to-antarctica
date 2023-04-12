@@ -75,7 +75,7 @@
     margin-bottom: 0;
   }
 
-  &:not(:last-child) {
+  &:not(:nth-child(3n)) {
     margin-right: 40px;
 
     @include vp-1023 {

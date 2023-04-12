@@ -298,13 +298,12 @@
             <div class="booking__form-container form" data-form-validate data-callback="base">
               <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
               <form method="post" action="https://echo.htmlacademy.ru">
-                <div class="form__field" data-validate-type="text" data-required data-message-base="Введите имя">
+                <div class="form__field" data-validate-type="text" data-limitation="name" data-required data-message-base="Введите имя">
                   <label>
                     <input name="name" id="name" type="text" placeholder="Имя" autocomplete="off">
                   </label>
                 </div>
-                <div class="form__field" data-validate-type="phone" data-on-input-validate data-required
-                  data-message-base="Введите номер телефона">
+                <div class="form__field" data-required data-message-base="Введите номер телефона">
                   <label>
                     <input name="phone" id="phone" type="tel" placeholder="Телефон" autocomplete="off">
                   </label>
@@ -418,7 +417,7 @@
                   <svg class="socials__link-icon" width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="img/sprite.svg#soc1"></use>
                   </svg>
-                  <span class="visually-hidden">Какая-то социальная сеть</span>
+                  <span class="visually-hidden">Яндекс Дзен</span>
                 </a>
               </li>
               <li class="socials__item">

@@ -740,8 +740,8 @@ button,
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 14px;
+  right: 0;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1490,7 +1490,7 @@ button,
   margin-bottom: 20px;
 }
 
-.advantages__item:not(:last-child) {
+.advantages__item:not(:nth-child(3n)) {
   margin-right: 40px;
 }
 
@@ -1585,6 +1585,7 @@ button,
   display: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
 }
 
 .product__group {
@@ -1630,7 +1631,7 @@ button,
 }
 
 .product {
-  padding: 27px 26px 24px;
+  padding: 27px 26px 25px;
   position: relative;
   overflow: hidden;
   min-height: 386px;
@@ -1709,6 +1710,7 @@ button,
   justify-content: flex-start;
   background-color: #011c40;
   background-image: none;
+  padding-bottom: 34px;
 }
 
 .product.focus-visible:focus h3 {
@@ -1720,26 +1722,6 @@ button,
 }
 
 .product.focus-visible:focus .product__link {
-  display: block;
-}
-
-.product:hover {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  background-color: #011c40;
-  background-image: none;
-}
-
-.product:hover h3 {
-  margin-bottom: 15px;
-}
-
-.product:hover .product__list {
-  display: block;
-}
-
-.product:hover .product__link {
   display: block;
 }
 
@@ -1866,6 +1848,7 @@ button,
   top: 0;
   left: 0;
   background-color: #f9fbfd;
+  cursor: pointer;
 }
 
 .form__field--checkbox input:checked + .form__field-mark::after {
@@ -2056,12 +2039,12 @@ button,
   margin-right: 40px;
 }
 
-.footer__nav {
-  margin-right: 336px;
-}
-
 .footer__navigation {
   max-width: 593px;
+}
+
+.socials {
+  margin-left: auto;
 }
 
 .socials__list {
@@ -2173,10 +2156,6 @@ button,
   .contacts__wrapper {
     width: 30vw;
   }
-
-  .footer__nav {
-    margin-right: 87px;
-  }
 }
 
 @media (max-width: 1023px) {
@@ -2278,7 +2257,7 @@ button,
     width: 30%;
   }
 
-  .advantages__item:not(:last-child) {
+  .advantages__item:not(:nth-child(3n)) {
     margin-right: 33px;
   }
 
@@ -2328,7 +2307,7 @@ button,
   }
 
   .product {
-    padding: 27px 35px 29px;
+    padding: 27px 35px 32px;
   }
 
   .product--astoria {
@@ -2438,10 +2417,6 @@ button,
 
   .footer__logo {
     margin-right: 25px;
-  }
-
-  .footer__nav {
-    margin-right: auto;
   }
 
   .footer__navigation {
@@ -2562,7 +2537,7 @@ button,
 
   .navigation__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .navigation__link {
@@ -2609,6 +2584,7 @@ button,
 
   .travel__wrapper {
     width: 100%;
+    max-width: 100%;
   }
 
   .travel h2 {
@@ -2653,7 +2629,7 @@ button,
     margin-bottom: 0;
   }
 
-  .advantages__item:not(:last-child) {
+  .advantages__item:not(:nth-child(3n)) {
     margin-right: 0;
     margin-bottom: 30px;
   }
@@ -2828,6 +2804,10 @@ button,
     align-items: flex-start;
   }
 
+  .contacts__container {
+    width: 100%;
+  }
+
   .contacts iframe {
     width: 100%;
     height: 316px;
@@ -2858,7 +2838,6 @@ button,
   }
 
   .footer__nav {
-    margin-right: 0;
     margin-bottom: 12px;
   }
 
@@ -2868,6 +2847,10 @@ button,
 
   .footer__navigation-item:not(:last-child) {
     margin-bottom: 5px;
+  }
+
+  .socials {
+    margin-left: 0;
   }
 
   .socials__item:not(:last-child) {
@@ -2991,6 +2974,7 @@ button,
     justify-content: flex-start;
     background-color: #011c40;
     background-image: none;
+    padding-bottom: 34px;
   }
 
   .product:hover:not(.focus-visible) h3 {

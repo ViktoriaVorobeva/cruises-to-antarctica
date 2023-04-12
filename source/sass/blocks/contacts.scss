@@ -107,6 +107,10 @@
 
 .contacts__container {
   position: relative;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .contacts iframe {
