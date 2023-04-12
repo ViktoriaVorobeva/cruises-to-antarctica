@@ -1,5 +1,7 @@
 import {modals} from './modals/init-modals';
 
+const TIME_OUT = 400;
+
 const navElements = document.querySelectorAll('.navigation__link');
 
 const getScroll = () => {
@@ -13,7 +15,7 @@ const getScroll = () => {
           const id = link.getAttribute('href');
           const target = document.querySelector(id);
           target.scrollIntoView({behavior: 'smooth'});
-        }, 400);
+        }, TIME_OUT);
       });
     });
   }
