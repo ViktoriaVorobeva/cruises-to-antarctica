@@ -48,6 +48,7 @@
   font-size: 14px;
   line-height: 150%;
   background-color: $color-alice-blue;
+  color: $color-tangaroa;
   padding: 10px 47px;
   width: 100%;
   text-align: center;
@@ -215,6 +216,14 @@
       display: block;
 
       @include hover-focus {
+        opacity: 0.7;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:focus {
         opacity: 0.7;
       }
 
