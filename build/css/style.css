@@ -1630,6 +1630,14 @@ button,
   margin-top: auto;
 }
 
+.product__link.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.product__link.focus-visible:active {
+  opacity: 0.5;
+}
+
 .product {
   padding: 27px 26px 25px;
   position: relative;
@@ -2966,6 +2974,10 @@ button,
   }
 
   .navigation__link:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+
+  .product__link:hover:not(.focus-visible) {
     opacity: 0.7;
   }
 
