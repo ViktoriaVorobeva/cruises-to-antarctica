@@ -1630,14 +1630,6 @@ button,
   margin-top: auto;
 }
 
-.product__link.focus-visible:focus {
-  opacity: 0.7;
-}
-
-.product__link.focus-visible:active {
-  opacity: 0.5;
-}
-
 .product {
   padding: 27px 26px 25px;
   position: relative;
@@ -1732,6 +1724,14 @@ button,
 
 .product.focus-visible:focus .product__link {
   display: block;
+}
+
+.product.focus-visible:focus .product__link.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.product.focus-visible:focus .product__link.focus-visible:active {
+  opacity: 0.5;
 }
 
 .booking {
@@ -2977,10 +2977,6 @@ button,
     opacity: 0.7;
   }
 
-  .product__link:hover:not(.focus-visible) {
-    opacity: 0.7;
-  }
-
   .product:hover:not(.focus-visible) {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -3002,6 +2998,18 @@ button,
     display: block;
   }
 
+  .product:hover:not(.focus-visible) .product__link.focus-visible:focus {
+    opacity: 0.7;
+  }
+
+  .product:hover:not(.focus-visible) .product__link.focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .product.focus-visible:focus .product__link:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+
   .form__field input:hover:not(.focus-visible) {
     background-color: #d8d8d9;
   }
@@ -3015,6 +3023,12 @@ button,
   }
 
   .socials__link:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+}
+
+@media (hover: hover) and (hover: hover) {
+  .product:hover:not(.focus-visible) .product__link:hover:not(.focus-visible) {
     opacity: 0.7;
   }
 }
