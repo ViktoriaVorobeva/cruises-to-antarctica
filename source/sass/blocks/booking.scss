@@ -1,10 +1,11 @@
 .booking {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: $color-alice-blue;
+  background-color: $color-qartz;
   background-repeat: no-repeat;
   background-image: image-set(url("../img/booking/booking@1x.webp") 1x, url("../img/booking/booking@2x.webp") 2x);
   background-size: cover;
+  background-position-y: 50%;
   z-index: -1;
 
   @include vp-1023 {
@@ -15,7 +16,7 @@
 
   @include vp-767 {
     padding-top: 60px;
-    padding-bottom: 65px;
+    padding-bottom: 64px;
     background-image: image-set(url("../img/booking/booking-phone@1x.webp") 1x, url("../img/booking/booking-phone@2x.webp") 2x);
   }
 }
@@ -36,17 +37,17 @@
   flex-direction: column;
   max-width: 493px;
   margin-left: 60px;
-  margin-right: 144px;
+  margin-right: auto;
 
   @include vp-1279 {
-    margin-right: 100px;
-    max-width: 390px;
+    width: 40vw;
     margin-left: 30px;
   }
 
   @include vp-1023 {
     max-width: none;
     margin: 0;
+    width: 100%;
     margin-bottom: 54px;
     align-items: center;
   }

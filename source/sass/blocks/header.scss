@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-image: image-set(url("../img/main-screen/main-screen@1x.webp") 1x, url("../img/main-screen/main-screen@2x.webp") 2x);
   background-size: cover;
+  background-position-y: 78%;
 
   @include vp-1023 {
     height: 638px;

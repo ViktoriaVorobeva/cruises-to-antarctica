@@ -2,10 +2,18 @@
   background-color: $color-tangaroa;
   padding: 42px 50px 50px 50px;
   max-width: 403px;
+  margin-right: 60px;
+
+  @include vp-1279 {
+    margin-right: 30px;
+  }
+
+  @include vp-1023 {
+    margin: 0;
+  }
 
   @include vp-767 {
     padding: 33px 28px 41px;
-    max-width: 100%;
   }
 }
 
@@ -62,6 +70,11 @@
 
 .form__field--checkbox input {
   display: none;
+}
+
+
+.form__field--checkbox .input-message {
+  bottom: -28px;
 }
 
 .form__field-mark {

@@ -1,11 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import {initModals, modals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {getScroll} from './modules/scroll';
 
-// ---------------------------------
 
+// ---------------------------------
+const modalElement = document.querySelector('.modal');
 const navHeader = document.querySelector('.header__navigation');
+const breakpoint = window.matchMedia('(min-width:768px)');
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -28,6 +30,13 @@ window.addEventListener('DOMContentLoaded', () => {
       navHeader.classList.remove('header__navigation--nojs');
     }
     getScroll();
+    const breakpointChecker = () => {
+      if (breakpoint.matches && modalElement.classList.contains('is-active')) {
+        modals.close('feedback');
+      }
+    };
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
   });
 });
 

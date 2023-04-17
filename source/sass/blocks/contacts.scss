@@ -29,9 +29,12 @@
 
 .contacts__wrapper {
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   @include vp-1279 {
-    width: 30vw;
+    width: 40vw;
   }
 
   @include vp-1023 {
@@ -59,8 +62,11 @@
 
 .contacts__link {
   margin: 0;
-  display: flex;
-  align-items: center;
+  font-size: 16px;
+  line-height: 150%;
+  display: block;
+  position: relative;
+  padding-left: 27px;
 
   &:not(:last-child) {
     margin-bottom: 22px;
@@ -76,18 +82,6 @@
     }
   }
 
-  @include vp-767 {
-    align-items: flex-start;
-  }
-}
-
-.contacts__link-text {
-  margin: 0;
-  font-size: 16px;
-  line-height: 150%;
-  margin-left: 7px;
-  display: block;
-
   br {
     display: none;
 
@@ -96,13 +90,27 @@
     }
   }
 
-  @include vp-1023 {
-    margin-left: 11px;
+  &--pin::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 22px;
+    background-image: url("../img/svg/pin.svg");
+    background-repeat: no-repeat;
+    top: 4px;
+    left: 0;
   }
-}
 
-.contacts__link-icon {
-  display: block;
+  &--phone::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 22px;
+    background-image: url("../img/svg/phone.svg");
+    background-repeat: no-repeat;
+    top: 2px;
+    left: 0;
+  }
 }
 
 .contacts__container {
@@ -116,6 +124,10 @@
 .contacts iframe {
   display: block;
   border: none;
+
+  @include vp-1279 {
+    width: 45vw;
+  }
 
   @include vp-1023 {
     width: 42vw;
