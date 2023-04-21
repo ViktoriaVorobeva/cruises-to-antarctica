@@ -1655,61 +1655,53 @@ button,
   cursor: pointer;
   background-position-y: center;
   overflow: scroll;
+  background-size: 100% 100%;
 }
 
 .product--astoria {
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: -webkit-image-set(url("../img/catalog/product-1@1x.webp") 1x, url("../img/catalog/product-1@2x.webp") 2x);
   background-image: image-set(url("../img/catalog/product-1@1x.webp") 1x, url("../img/catalog/product-1@2x.webp") 2x);
 }
 
 .product--alain {
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: -webkit-image-set(url("../img/catalog/product-2@1x.webp") 1x, url("../img/catalog/product-2@2x.webp") 2x);
   background-image: image-set(url("../img/catalog/product-2@1x.webp") 1x, url("../img/catalog/product-2@2x.webp") 2x);
 }
 
 .product--athlantis {
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: -webkit-image-set(url("../img/catalog/product-3@1x.webp") 1x, url("../img/catalog/product-3@2x.webp") 2x);
   background-image: image-set(url("../img/catalog/product-3@1x.webp") 1x, url("../img/catalog/product-3@2x.webp") 2x);
 }
 
 .product--odissei {
   background-repeat: no-repeat;
-  background-position-y: 70%;
-  background-size: cover;
   background-image: -webkit-image-set(url("../img/catalog/product-4@1x.webp") 1x, url("../img/catalog/product-4@2x.webp") 2x);
   background-image: image-set(url("../img/catalog/product-4@1x.webp") 1x, url("../img/catalog/product-4@2x.webp") 2x);
 }
 
 .product--olympia {
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: -webkit-image-set(url("../img/catalog/product-5@1x.webp") 1x, url("../img/catalog/product-5@2x.webp") 2x);
   background-image: image-set(url("../img/catalog/product-5@1x.webp") 1x, url("../img/catalog/product-5@2x.webp") 2x);
 }
 
 .product--avrora {
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: -webkit-image-set(url("../img/catalog/product-6@1x.webp") 1x, url("../img/catalog/product-6@2x.webp") 2x);
   background-image: image-set(url("../img/catalog/product-6@1x.webp") 1x, url("../img/catalog/product-6@2x.webp") 2x);
 }
 
 .product--leonor {
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: -webkit-image-set(url("../img/catalog/product-7@1x.webp") 1x, url("../img/catalog/product-7@2x.webp") 2x);
   background-image: image-set(url("../img/catalog/product-7@1x.webp") 1x, url("../img/catalog/product-7@2x.webp") 2x);
 }
 
 .product--minion {
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: -webkit-image-set(url("../img/catalog/product-8@1x.webp") 1x, url("../img/catalog/product-8@2x.webp") 2x);
   background-image: image-set(url("../img/catalog/product-8@1x.webp") 1x, url("../img/catalog/product-8@2x.webp") 2x);
 }
@@ -2380,11 +2372,12 @@ button,
   }
 
   .product {
+    height: auto;
     padding: 27px 35px 32px;
+    aspect-ratio: 1/1.25;
   }
 
   .product--astoria {
-    background-position-y: 50%;
     background-image: -webkit-image-set(url("../img/catalog/product-1-tablet@1x.webp") 1x, url("../img/catalog/product-1-tablet@2x.webp") 2x);
     background-image: image-set(url("../img/catalog/product-1-tablet@1x.webp") 1x, url("../img/catalog/product-1-tablet@2x.webp") 2x);
   }
@@ -2759,10 +2752,10 @@ button,
 
   .product {
     padding: 27px 25px 17px;
+    aspect-ratio: 1/1.4;
   }
 
   .product--astoria {
-    background-position-y: bottom;
     background-image: -webkit-image-set(url("../img/catalog/product-1-phone@1x.webp") 1x, url("../img/catalog/product-1-phone@2x.webp") 2x);
     background-image: image-set(url("../img/catalog/product-1-phone@1x.webp") 1x, url("../img/catalog/product-1-phone@2x.webp") 2x);
   }
